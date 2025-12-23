@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "veria"
+version = "0.1.0"
+description = "Official Python SDK for Veria Compliance API - wallet screening, sanctions checks, KYC/AML"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Veria Protocol", email = "support@veria.cc" }
+]
+keywords = [
+    "veria",
+    "compliance",
+    "kyc",
+    "aml",
+    "sanctions",
+    "ofac",
+    "wallet-screening",
+    "web3",
+    "ethereum",
+    "solana",
+    "defi",
+    "mica",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "responses>=0.23.0",
+]
+
+[project.urls]
+Homepage = "https://veria.cc"
+Documentation = "https://docs.veria.cc"
+Repository = "https://github.com/Veria-Protocol/veria-python"
+Issues = "https://github.com/Veria-Protocol/veria-python/issues"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/veria"]
