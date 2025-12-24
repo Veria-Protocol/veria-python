@@ -1,5 +1,10 @@
 # Veria SDK for Python
 
+[![PyPI version](https://img.shields.io/pypi/v/veria.svg)](https://pypi.org/project/veria/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/veria.svg)](https://pypi.org/project/veria/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python versions](https://img.shields.io/pypi/pyversions/veria.svg)](https://pypi.org/project/veria/)
+
 Official SDK for the [Veria Compliance API](https://veria.cc) - screen wallet addresses for sanctions, PEP, and AML compliance.
 
 ## Installation
@@ -13,7 +18,7 @@ pip install veria
 ```python
 from veria import VeriaClient
 
-client = VeriaClient(api_key="veria_live_xxxxxxxxxxxx")  # Get yours at https://protocol.veria.cc
+client = VeriaClient(api_key="veria_live_xxxxxxxxxxxx")  # Get yours at https://veria.cc/choose-plan
 
 # Screen an address
 result = client.screen("0x742d35Cc6634C0532925a3b844Bc454e4438f44e")
@@ -195,11 +200,15 @@ class ComplianceMiddleware:
         return self.get_response(request)
 ```
 
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
 ## Resources
 
-- [Documentation](https://docs.veria.cc)
-- [API Reference](https://docs.veria.cc/api)
-- [Get API Key](https://protocol.veria.cc)
+- [Documentation](https://veria.cc/protocol/docs)
+- [API Reference](https://veria.cc/protocol/docs/reference)
+- [Get API Key](https://veria.cc/choose-plan)
 - [GitHub](https://github.com/Veria-Protocol/veria-python)
 
 ## License
