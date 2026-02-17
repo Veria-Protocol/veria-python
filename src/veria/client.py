@@ -77,8 +77,8 @@ class VeriaClient:
     Official Python client for the Veria Compliance API.
 
     Args:
-        api_key: Your Veria API key (get one at https://protocol.veria.cc)
-        base_url: Base URL for the API (default: https://api.veria.cc)
+        api_key: Your Veria API key (get one at https://protocol.veria.us)
+        base_url: Base URL for the API (default: https://api.veria.us)
         timeout: Request timeout in seconds (default: 30)
 
     Example:
@@ -91,7 +91,7 @@ class VeriaClient:
     def __init__(
         self,
         api_key: str,
-        base_url: str = "https://api.veria.cc",
+        base_url: str = "https://api.veria.us",
         timeout: int = 30,
     ):
         if not api_key:

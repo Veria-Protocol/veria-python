@@ -10,7 +10,7 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.9"
 authors = [
-    { name = "Veria Protocol", email = "support@veria.cc" }
+    { name = "Veria Protocol", email = "support@veria.us" }
 ]
 keywords = [
     "veria",
@@ -52,8 +52,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://veria.cc"
-Documentation = "https://docs.veria.cc"
+Homepage = "https://veria.us"
+Documentation = "https://docs.veria.us"
 Repository = "https://github.com/Veria-Protocol/veria-python"
 Issues = "https://github.com/Veria-Protocol/veria-python/issues"
 
